@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical"
+    tools:context=".presentation.ResultActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/base_color">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_genreNameResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre name"
+            android:textColor="@color/white"
+            android:fontFamily="@font/plusjakartasans_bold"
+            android:textSize="24sp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/list_item_result"
+        app:spanCount="2"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:layout_marginHorizontal="16dp"/>
+    
+</androidx.appcompat.widget.LinearLayoutCompat>
