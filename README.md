@@ -1,8 +1,8 @@
 # Challenge Chapter 2 - Synrgy🔥
 
 📌Note: 
-- Challenge menggunakan Activity Only terdapat pada branch -> feature1/with-activity-only
-- Challenge menggunakan Navigation Component terdapat pada branch -> //dalam tahap pengerjaan//
+- Challenge menggunakan Activity Only terdapat pada branch -> `feature1/with-activity-only`
+- Challenge menggunakan Navigation Component terdapat pada branch -> `//dalam tahap pengerjaan//`
 - Tambahan library RoundedImageView `https://github.com/vinc3m1/RoundedImageView` agar memudahkan saat membuat corner radius pada imageView
 
 ## Concept Design🎨
