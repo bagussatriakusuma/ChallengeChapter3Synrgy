@@ -38,58 +38,58 @@ fun fetchContentRecommended(identifier: String?): List<RecommendResultModel> {
             RecommendResultModel(songImage = R.drawable.kpop4, songTitle = "Talk that Talk", songArtist = "TWICE"),
         )
         "Pop" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Get Lucky", songArtist = "Daft Punk"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Uptown Funk", songArtist = "Mark Ronson"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Umbrella", songArtist = "Rihanna"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Adore You", songArtist = "Harry Styles"),
+            RecommendResultModel(songImage = R.drawable.pop1, songTitle = "Get Lucky", songArtist = "Daft Punk"),
+            RecommendResultModel(songImage = R.drawable.pop2, songTitle = "Uptown Funk", songArtist = "Mark Ronson"),
+            RecommendResultModel(songImage = R.drawable.pop3, songTitle = "Umbrella", songArtist = "Rihanna"),
+            RecommendResultModel(songImage = R.drawable.pop4, songTitle = "Adore You", songArtist = "Harry Styles"),
         )
         "Indie" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Buttons", songArtist = "Steve Lacy"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Runner", songArtist = "Alex G"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Orange Blood", songArtist = "Mt. Joy"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "New Romance", songArtist = "Beach House"),
+            RecommendResultModel(songImage = R.drawable.indie1, songTitle = "Buttons", songArtist = "Steve Lacy"),
+            RecommendResultModel(songImage = R.drawable.indie2, songTitle = "Runner", songArtist = "Alex G"),
+            RecommendResultModel(songImage = R.drawable.indie3, songTitle = "Orange Blood", songArtist = "Mt. Joy"),
+            RecommendResultModel(songImage = R.drawable.indie4, songTitle = "New Romance", songArtist = "Beach House"),
         )
         "Rock" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Bohemian Rhapsody", songArtist = "Queen"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "American Girl", songArtist = "Tom Petty"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "You Really Got Me", songArtist = "The Kinks"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Born To Run", songArtist = "Bruce Springsteen"),
+            RecommendResultModel(songImage = R.drawable.rock1, songTitle = "Bohemian Rhapsody", songArtist = "Queen"),
+            RecommendResultModel(songImage = R.drawable.rock2, songTitle = "American Girl", songArtist = "Tom Petty"),
+            RecommendResultModel(songImage = R.drawable.rock3, songTitle = "You Really Got Me", songArtist = "The Kinks"),
+            RecommendResultModel(songImage = R.drawable.rock4, songTitle = "Born To Run", songArtist = "Bruce Springsteen"),
         )
         "Funk" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Word Up", songArtist = "Cameo"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Get Down on It", songArtist = "Kool & The Gang"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Funkytown", songArtist = "Lipps Inc"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Give It To Me Baby", songArtist = "Rick James"),
+            RecommendResultModel(songImage = R.drawable.funk1, songTitle = "Word Up", songArtist = "Cameo"),
+            RecommendResultModel(songImage = R.drawable.funk2, songTitle = "Get Down on It", songArtist = "Kool & The Gang"),
+            RecommendResultModel(songImage = R.drawable.funk3, songTitle = "Funkytown", songArtist = "Lipps Inc"),
+            RecommendResultModel(songImage = R.drawable.funk4, songTitle = "Give It To Me Baby", songArtist = "Rick James"),
         )
         "Heavy Metal" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Black No. 1 (Little Miss Scare-All)", songArtist = "Type O Negative"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Evil", songArtist = "Mercyful Fate"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "All We Are", songArtist = "Warlock"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "You Can’t Bring Me Down", songArtist = "Suicidal Tendencies"),
+            RecommendResultModel(songImage = R.drawable.hm1, songTitle = "Black No. 1 (Little Miss Scare-All)", songArtist = "Type O Negative"),
+            RecommendResultModel(songImage = R.drawable.hm2, songTitle = "Evil", songArtist = "Mercyful Fate"),
+            RecommendResultModel(songImage = R.drawable.hm3, songTitle = "All We Are", songArtist = "Warlock"),
+            RecommendResultModel(songImage = R.drawable.hm4, songTitle = "You Can’t Bring Me Down", songArtist = "Suicidal Tendencies"),
         )
         "Reggae" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Now That We Found Love", songArtist = "Third World"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Many Rivers to Cross", songArtist = "Jimmy Cliff"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "I Don’t Wanna Dance", songArtist = "Eddy Grant"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Baby Come Back", songArtist = "Pato Banton"),
+            RecommendResultModel(songImage = R.drawable.reggae1, songTitle = "Now That We Found Love", songArtist = "Third World"),
+            RecommendResultModel(songImage = R.drawable.reggae2, songTitle = "Many Rivers to Cross", songArtist = "Jimmy Cliff"),
+            RecommendResultModel(songImage = R.drawable.reggae3, songTitle = "I Don’t Wanna Dance", songArtist = "Eddy Grant"),
+            RecommendResultModel(songImage = R.drawable.reggae4, songTitle = "Baby Come Back", songArtist = "Pato Banton"),
         )
         "Hard Rock" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Magic Carpet Ride", songArtist = "Steppenwolf"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Won’t Get Fooled Again", songArtist = "The Who"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Stairway to Heaven", songArtist = "Led Zeppelin"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "November Rain", songArtist = "Guns N' Roses"),
+            RecommendResultModel(songImage = R.drawable.hr1, songTitle = "Magic Carpet Ride", songArtist = "Steppenwolf"),
+            RecommendResultModel(songImage = R.drawable.hr2, songTitle = "Won’t Get Fooled Again", songArtist = "The Who"),
+            RecommendResultModel(songImage = R.drawable.hr3, songTitle = "Stairway to Heaven", songArtist = "Led Zeppelin"),
+            RecommendResultModel(songImage = R.drawable.hr4, songTitle = "November Rain", songArtist = "Guns N' Roses"),
         )
         "Rap" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "B.M.F. (Blowin’ Money Fast)", songArtist = "Rick Ross"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Tomorrow 2", songArtist = "Cardi B"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Gin and Juice", songArtist = "Snoop Dogg"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Deep Cover", songArtist = "Dr. Dre"),
+            RecommendResultModel(songImage = R.drawable.rap1, songTitle = "B.M.F. (Blowin’ Money Fast)", songArtist = "Rick Ross"),
+            RecommendResultModel(songImage = R.drawable.rap2, songTitle = "Tomorrow 2", songArtist = "Cardi B"),
+            RecommendResultModel(songImage = R.drawable.rap3, songTitle = "Gin and Juice", songArtist = "Snoop Dogg"),
+            RecommendResultModel(songImage = R.drawable.rap4, songTitle = "Deep Cover", songArtist = "Dr. Dre"),
         )
         "Folk" -> listOf(
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Freight Train", songArtist = "Elizabeth Cotten"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Some Day Soon", songArtist = "Ian & Sylvia"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "City of New Orleans", songArtist = "Judy Collins"),
-            RecommendResultModel(songImage = R.drawable.cover_techno, songTitle = "Ramblin’ Boy", songArtist = "Tom Paxton"),
+            RecommendResultModel(songImage = R.drawable.folk1, songTitle = "Freight Train", songArtist = "Elizabeth Cotten"),
+            RecommendResultModel(songImage = R.drawable.folk2, songTitle = "Some Day Soon", songArtist = "Ian & Sylvia"),
+            RecommendResultModel(songImage = R.drawable.folk3, songTitle = "City of New Orleans", songArtist = "Judy Collins"),
+            RecommendResultModel(songImage = R.drawable.folk4, songTitle = "Ramblin’ Boy", songArtist = "Tom Paxton"),
         )
         else -> emptyList()
     }
@@ -126,44 +126,44 @@ fun fetchContentRecently(identifier: String?): List<RecentlyResultModel> {
             RecentlyResultModel(songImage = R.drawable.kpop8, songTitle = "Super Shy", songArtist = "NewJeans"),
         )
         "Pop" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Happy", songArtist = "Pharrell Williams"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "drivers license", songArtist = "Olivia Rodrigo"),
+            RecentlyResultModel(songImage = R.drawable.pop5, songTitle = "Happy", songArtist = "Pharrell Williams"),
+            RecentlyResultModel(songImage = R.drawable.pop6, songTitle = "drivers license", songArtist = "Olivia Rodrigo"),
         )
         "Indie" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "I Bet You Look Good on the Dancefloor", songArtist = "Arctic Monkeys"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Ghost of Chicago", songArtist = "Noah Floersch"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "The Party Line", songArtist = "Belle and Sebastian")
+            RecentlyResultModel(songImage = R.drawable.indie5, songTitle = "I Bet You Look Good on the Dancefloor", songArtist = "Arctic Monkeys"),
+            RecentlyResultModel(songImage = R.drawable.indie6, songTitle = "Ghost of Chicago", songArtist = "Noah Floersch"),
+            RecentlyResultModel(songImage = R.drawable.indie7, songTitle = "The Party Line", songArtist = "Belle and Sebastian")
         )
         "Rock" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Fell in Love With a Girl", songArtist = "The White Stripes"),
+            RecentlyResultModel(songImage = R.drawable.rock5, songTitle = "Fell in Love With a Girl", songArtist = "The White Stripes"),
         )
         "Funk" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Kiss", songArtist = "The Revolution"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Use Me", songArtist = "Bill Withers"),
+            RecentlyResultModel(songImage = R.drawable.funk5, songTitle = "Kiss", songArtist = "The Revolution"),
+            RecentlyResultModel(songImage = R.drawable.funk6, songTitle = "Use Me", songArtist = "Bill Withers"),
         )
         "Heavy Metal" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Photograph", songArtist = "Def Leppard"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Breaking the Law", songArtist = "Judas Priest"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Bring the Noise", songArtist = "Anthrax"),
+            RecentlyResultModel(songImage = R.drawable.hm5, songTitle = "Photograph", songArtist = "Def Leppard"),
+            RecentlyResultModel(songImage = R.drawable.hm6, songTitle = "Breaking the Law", songArtist = "Judas Priest"),
+            RecentlyResultModel(songImage = R.drawable.hm7, songTitle = "Bring the Noise", songArtist = "Anthrax"),
         )
         "Reggae" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "I Shot The Sheriff", songArtist = "Bob Marley"),
+            RecentlyResultModel(songImage = R.drawable.reggae5, songTitle = "I Shot The Sheriff", songArtist = "Bob Marley"),
         )
         "Hard Rock" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "November Rain", songArtist = "Guns N' Roses"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Kashmir", songArtist = "Led Zeppelin"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Eye of the Tiger", songArtist = "Survivor"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Dream On", songArtist = "Aerosmith"),
+            RecentlyResultModel(songImage = R.drawable.hr5, songTitle = "November Rain", songArtist = "Guns N' Roses"),
+            RecentlyResultModel(songImage = R.drawable.hr6, songTitle = "Kashmir", songArtist = "Led Zeppelin"),
+            RecentlyResultModel(songImage = R.drawable.hr7, songTitle = "Eye of the Tiger", songArtist = "Survivor"),
+            RecentlyResultModel(songImage = R.drawable.hr8, songTitle = "Dream On", songArtist = "Aerosmith"),
         )
         "Rap" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "The Search", songArtist = "NF"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Hope", songArtist = "NF"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "HAPPY", songArtist = "NF"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Lie", songArtist = "NF"),
+            RecentlyResultModel(songImage = R.drawable.rap5, songTitle = "The Search", songArtist = "NF"),
+            RecentlyResultModel(songImage = R.drawable.rap6, songTitle = "Hope", songArtist = "NF"),
+            RecentlyResultModel(songImage = R.drawable.rap7, songTitle = "HAPPY", songArtist = "NF"),
+            RecentlyResultModel(songImage = R.drawable.rap8, songTitle = "Lie", songArtist = "NF"),
         )
         "Folk" -> listOf(
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Four Strong Winds", songArtist = "Ian & Sylvia"),
-            RecentlyResultModel(songImage = R.drawable.cover_techno, songTitle = "Don’t Think Twice, It’s All Right", songArtist = "Bob Dylan"),
+            RecentlyResultModel(songImage = R.drawable.folk5, songTitle = "Four Strong Winds", songArtist = "Ian & Sylvia"),
+            RecentlyResultModel(songImage = R.drawable.folk6, songTitle = "Don’t Think Twice, It’s All Right", songArtist = "Bob Dylan"),
         )
         else -> emptyList()
     }
@@ -201,58 +201,58 @@ fun fetchContentMore(identifier: String?): List<MoreResultModel> {
             MoreResultModel(songImage = R.drawable.kpop12, songTitle = "Décalcomanie", songArtist = "Mamamoo"),
         )
         "Pop" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Dance The Night", songArtist = "Dua Lipa"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "bad guy", songArtist = "Billie Eilish"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Firework", songArtist = "Katy Perry"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Counting Stars", songArtist = "OneRepublic"),
+            MoreResultModel(songImage = R.drawable.pop7, songTitle = "Dance The Night", songArtist = "Dua Lipa"),
+            MoreResultModel(songImage = R.drawable.pop8, songTitle = "bad guy", songArtist = "Billie Eilish"),
+            MoreResultModel(songImage = R.drawable.pop9, songTitle = "Firework", songArtist = "Katy Perry"),
+            MoreResultModel(songImage = R.drawable.pop10, songTitle = "Counting Stars", songArtist = "OneRepublic"),
         )
         "Indie" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Weird Goodbyes", songArtist = "The National"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Into Your Room", songArtist = "Holly Humberstone"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Believe", songArtist = "Mumford & Sons"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Motion Sickness", songArtist = "Phoebe Bridgers"),
+            MoreResultModel(songImage = R.drawable.indie8, songTitle = "Weird Goodbyes", songArtist = "The National"),
+            MoreResultModel(songImage = R.drawable.indie9, songTitle = "Into Your Room", songArtist = "Holly Humberstone"),
+            MoreResultModel(songImage = R.drawable.indie10, songTitle = "Believe", songArtist = "Mumford & Sons"),
+            MoreResultModel(songImage = R.drawable.indie11, songTitle = "Motion Sickness", songArtist = "Phoebe Bridgers"),
         )
         "Rock" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "There She Goes, My Beautiful World", songArtist = "Nick Cave"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Barracuda", songArtist = "Heart"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Wuthering Heights", songArtist = "Kate Bush"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "School’s Out", songArtist = "Alice Cooper"),
+            MoreResultModel(songImage = R.drawable.rock6, songTitle = "There She Goes, My Beautiful World", songArtist = "Nick Cave"),
+            MoreResultModel(songImage = R.drawable.rock7, songTitle = "Barracuda", songArtist = "Heart"),
+            MoreResultModel(songImage = R.drawable.rock8, songTitle = "Wuthering Heights", songArtist = "Kate Bush"),
+            MoreResultModel(songImage = R.drawable.rock9, songTitle = "School’s Out", songArtist = "Alice Cooper"),
         )
         "Funk" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Shining Star", songArtist = "Earth, Wind & Fire"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Low Rider", songArtist = "War"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Fire", songArtist = "Ohio Players"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Theme From Shaft", songArtist = "Isaac Hayes"),
+            MoreResultModel(songImage = R.drawable.funk7, songTitle = "Shining Star", songArtist = "Earth, Wind & Fire"),
+            MoreResultModel(songImage = R.drawable.funk8, songTitle = "Low Rider", songArtist = "War"),
+            MoreResultModel(songImage = R.drawable.funk9, songTitle = "Fire", songArtist = "Ohio Players"),
+            MoreResultModel(songImage = R.drawable.funk10, songTitle = "Theme From Shaft", songArtist = "Isaac Hayes"),
         )
         "Heavy Metal" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Metal Health", songArtist = "Quiet Riot"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Blood and Thunder", songArtist = "Mastodon"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "We Will Rise", songArtist = "Arch Enemy"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "The Cry of Mankind", songArtist = "My Dying Bride"),
+            MoreResultModel(songImage = R.drawable.hm8, songTitle = "Metal Health", songArtist = "Quiet Riot"),
+            MoreResultModel(songImage = R.drawable.hm9, songTitle = "Blood and Thunder", songArtist = "Mastodon"),
+            MoreResultModel(songImage = R.drawable.hm10, songTitle = "We Will Rise", songArtist = "Arch Enemy"),
+            MoreResultModel(songImage = R.drawable.hm11, songTitle = "The Cry of Mankind", songArtist = "My Dying Bride"),
         )
         "Reggae" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Red Red Wine", songArtist = "UB40"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Don't Worry Be Happy", songArtist = "Bobby McFerrin"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Don't Turn Around", songArtist = "Aswad"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Underneath It All", songArtist = "No Doubt"),
+            MoreResultModel(songImage = R.drawable.reggae6, songTitle = "Red Red Wine", songArtist = "UB40"),
+            MoreResultModel(songImage = R.drawable.reggae7, songTitle = "Don't Worry Be Happy", songArtist = "Bobby McFerrin"),
+            MoreResultModel(songImage = R.drawable.reggae8, songTitle = "Don't Turn Around", songArtist = "Aswad"),
+            MoreResultModel(songImage = R.drawable.reggae9, songTitle = "Underneath It All", songArtist = "No Doubt"),
         )
         "Hard Rock" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Never Too Late", songArtist = "Three Days Grace"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "We Will Rock You", songArtist = "Queen"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Cult of Personality", songArtist = "Living Colour"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Highway to Hell", songArtist = "AC/DC"),
+            MoreResultModel(songImage = R.drawable.hr9, songTitle = "Never Too Late", songArtist = "Three Days Grace"),
+            MoreResultModel(songImage = R.drawable.hr10, songTitle = "We Will Rock You", songArtist = "Queen"),
+            MoreResultModel(songImage = R.drawable.hr11, songTitle = "Cult of Personality", songArtist = "Living Colour"),
+            MoreResultModel(songImage = R.drawable.hr12, songTitle = "Highway to Hell", songArtist = "AC/DC"),
         )
         "Rap" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Deep Cover", songArtist = "Dr. Dre"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Empire State of Mind", songArtist = "Jay-Z"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "The Bridge", songArtist = "MC Shan"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Passin’ Me by", songArtist = "The Pharcyde"),
+            MoreResultModel(songImage = R.drawable.rap9, songTitle = "Deep Cover", songArtist = "Dr. Dre"),
+            MoreResultModel(songImage = R.drawable.rap10, songTitle = "Empire State of Mind", songArtist = "Jay-Z"),
+            MoreResultModel(songImage = R.drawable.rap11, songTitle = "The Bridge", songArtist = "MC Shan"),
+            MoreResultModel(songImage = R.drawable.rap12, songTitle = "Passin’ Me by", songArtist = "The Pharcyde"),
         )
         "Folk" -> listOf(
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Across the Great Divide", songArtist = "Kate Wolf"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Kisses Sweeter Than Wine", songArtist = "The Weavers"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Love Is Our Cross to Bear", songArtist = "John Gorka"),
-            MoreResultModel(songImage = R.drawable.cover_techno, songTitle = "Puff the Magic Dragon", songArtist = "Peter, Paul and Mary"),
+            MoreResultModel(songImage = R.drawable.folk7, songTitle = "Across the Great Divide", songArtist = "Kate Wolf"),
+            MoreResultModel(songImage = R.drawable.folk8, songTitle = "Kisses Sweeter Than Wine", songArtist = "The Weavers"),
+            MoreResultModel(songImage = R.drawable.folk9, songTitle = "Love Is Our Cross to Bear", songArtist = "John Gorka"),
+            MoreResultModel(songImage = R.drawable.folk10, songTitle = "Puff the Magic Dragon", songArtist = "Peter, Paul and Mary"),
         )
         else -> emptyList()
     }
