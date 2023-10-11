@@ -13,6 +13,13 @@
         android:layout_height="56dp"
         android:background="@color/base_color">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left"
+            android:layout_marginEnd="8dp"/>
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_genreNameResult"
             android:layout_width="wrap_content"
@@ -26,15 +33,84 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:orientation="vertical"
-        tools:listitem="@layout/list_item_result"
-        app:spanCount="2"
-        android:clipToPadding="false"
-        android:paddingTop="8dp"
-        android:layout_marginHorizontal="16dp"/>
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended for today"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/plusjakartasans_bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/list_item_result"
+                app:spanCount="2"
+                android:clipToPadding="false"
+                android:paddingStart="10dp"
+                android:layout_marginTop="12dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recently played"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/plusjakartasans_bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recently"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/list_item_result"
+                app:spanCount="2"
+                android:clipToPadding="false"
+                android:paddingStart="10dp"
+                android:layout_marginTop="12dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More of what you like"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/plusjakartasans_bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/list_item_result"
+                app:spanCount="2"
+                android:clipToPadding="false"
+                android:paddingStart="10dp"
+                android:layout_marginTop="12dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
     
 </androidx.appcompat.widget.LinearLayoutCompat>

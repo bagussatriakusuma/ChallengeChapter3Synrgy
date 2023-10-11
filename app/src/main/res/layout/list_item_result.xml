@@ -1,77 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@color/base_color"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="0dp"
-        app:cardBackgroundColor="@color/base_color"
-        app:cardCornerRadius="0dp"
-        app:cardElevation="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_resultImage"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@color/white"
+        android:scaleType="centerCrop"
+        android:layout_marginHorizontal="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeWidth="0dp">
+        app:riv_corner_radius="4dp" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_resultTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/plusjakartasans_semibold"
+        android:text="Song name"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/iv_resultImage"
+        app:layout_constraintStart_toStartOf="@+id/iv_resultImage"
+        app:layout_constraintTop_toBottomOf="@+id/iv_resultImage" />
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/iv_resultImage"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginVertical="8dp"
-                android:src="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:riv_corner_radius="2dp" />
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_resultImage"
-                app:layout_constraintStart_toEndOf="@+id/iv_resultImage"
-                app:layout_constraintTop_toTopOf="@+id/iv_resultImage">
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tv_resultTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/plusjakartasans_medium"
-                    android:text="Song name"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tv_resultArtist"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/plusjakartasans_medium"
-                    android:text="Artist name"
-                    android:textColor="#969696"
-                    android:textSize="14sp" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_more"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_resultArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plusjakartasans_medium"
+        android:text="Artist name"
+        android:textColor="#969696"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_resultTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

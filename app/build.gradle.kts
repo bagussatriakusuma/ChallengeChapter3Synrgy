@@ -54,6 +54,4 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.4.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.4.2")
     implementation("com.makeramen:roundedimageview:2.3.0")
-
-    //rounded imageview
 }
