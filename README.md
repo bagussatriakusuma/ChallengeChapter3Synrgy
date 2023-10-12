@@ -1,1 +1,1 @@
-# Branch 1 - With Activity Only 🚀
+# Branch 2 - With Navigation Component 🚀
