@@ -1,27 +1,39 @@
 package com.example.challengechapter3.presentation
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.challengechapter3.R
 import com.example.challengechapter3.adapter.GenreAdapter
-import com.example.challengechapter3.databinding.ActivitySearchBinding
+import com.example.challengechapter3.databinding.FragmentSearchBinding
 import com.example.challengechapter3.model.GenreModel
 
-class SearchActivity : AppCompatActivity() {
+class SearchFragment : Fragment() {
+    private lateinit var binding: FragmentSearchBinding
     companion object{
         const val EXTRAS_TITLE = "GenreTitle"
         const val GENRE_IDENTIFIER = "GenreIdentifier"
     }
-    private lateinit var binding: ActivitySearchBinding
     private lateinit var genreAdapter: GenreAdapter
     private lateinit var genreDataList: List<GenreModel>
+    private val bundle = Bundle()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivitySearchBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentSearchBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         bindAdapter()
         provideDataGenre()
@@ -31,12 +43,14 @@ class SearchActivity : AppCompatActivity() {
     private fun bindAdapter(){
         genreAdapter = GenreAdapter(object: GenreAdapter.OnClickListener {
             override fun onClickItem(data: GenreModel) {
-                val intent = Intent(this@SearchActivity, ResultActivity::class.java)
-                intent.putExtra(EXTRAS_TITLE, data.genreTitle)
-                intent.putExtra(GENRE_IDENTIFIER, data.genreTitle)
-                startActivity(intent)
+                bundle.putString(EXTRAS_TITLE, data.genreTitle)
+                bundle.putString(GENRE_IDENTIFIER, data.genreTitle)
+                findNavController().navigate(R.id.action_searchFragment_to_resultFragment, bundle)
             }
         })
+        StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL).apply {
+            binding.rvGenre.layoutManager = this
+        }
         binding.rvGenre.adapter = genreAdapter
     }
 

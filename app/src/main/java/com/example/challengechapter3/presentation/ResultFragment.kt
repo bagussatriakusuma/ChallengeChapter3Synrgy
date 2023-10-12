@@ -2,12 +2,17 @@ package com.example.challengechapter3.presentation
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.challengechapter3.R
 import com.example.challengechapter3.adapter.MoreResultAdapter
 import com.example.challengechapter3.adapter.RecentlyResultAdapter
 import com.example.challengechapter3.adapter.RecommendResultAdapter
-import com.example.challengechapter3.databinding.ActivityResultBinding
+import com.example.challengechapter3.databinding.FragmentResultBinding
 import com.example.challengechapter3.model.MoreResultModel
 import com.example.challengechapter3.model.RecentlyResultModel
 import com.example.challengechapter3.model.RecommendResultModel
@@ -15,18 +20,25 @@ import com.example.challengechapter3.utils.fetchContentMore
 import com.example.challengechapter3.utils.fetchContentRecently
 import com.example.challengechapter3.utils.fetchContentRecommended
 
-class ResultActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityResultBinding
+class ResultFragment : Fragment() {
+    private lateinit var binding: FragmentResultBinding
     private lateinit var resultAdapter: RecommendResultAdapter
     private lateinit var recentlyResultAdapter: RecentlyResultAdapter
     private lateinit var moreResultAdapter: MoreResultAdapter
     private lateinit var resultDataList: List<RecommendResultModel>
     private lateinit var recentlyResultDataList: List<RecentlyResultModel>
     private lateinit var moreResultDataList: List<MoreResultModel>
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityResultBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentResultBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         getData()
         bindView()
@@ -36,13 +48,13 @@ class ResultActivity : AppCompatActivity() {
 
     private fun bindView(){
         binding.ivBack.setOnClickListener {
-            goBackToSearchActivity()
+            findNavController().popBackStack()
         }
     }
 
     private fun getData(){
-        val getTitleName = intent.getStringExtra(SearchActivity.EXTRAS_TITLE)
-        val genreIdentifier = intent.getStringExtra(SearchActivity.GENRE_IDENTIFIER)
+        val getTitleName = arguments?.getString(SearchFragment.EXTRAS_TITLE)
+        val genreIdentifier = arguments?.getString(SearchFragment.GENRE_IDENTIFIER)
 
         binding.tvGenreNameResult.text = getTitleName
         resultDataList = fetchContentRecommended(genreIdentifier)
@@ -53,33 +65,21 @@ class ResultActivity : AppCompatActivity() {
     private fun bindAdapter() {
         resultAdapter = RecommendResultAdapter(object : RecommendResultAdapter.OnClickListener {
             override fun onClickItem(data: RecommendResultModel) {
-                val searchQuery = data.songTitle
-                val encodedQuery = Uri.encode(searchQuery)
-                val url = "https://www.google.com/search?q=$encodedQuery"
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                startActivity(intent)
+                goToBrowserRecommend(data)
             }
         })
         binding.rvResult.adapter = resultAdapter
 
         recentlyResultAdapter = RecentlyResultAdapter(object : RecentlyResultAdapter.OnClickListener {
             override fun onClickItem(data: RecentlyResultModel) {
-                val searchQuery = data.songTitle
-                val encodedQuery = Uri.encode(searchQuery)
-                val url = "https://www.google.com/search?q=$encodedQuery"
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                startActivity(intent)
+                goToBrowserRecently(data)
             }
         })
         binding.rvRecently.adapter = recentlyResultAdapter
 
         moreResultAdapter = MoreResultAdapter(object : MoreResultAdapter.OnClickListener {
             override fun onClickItem(data: MoreResultModel) {
-                val searchQuery = data.songTitle
-                val encodedQuery = Uri.encode(searchQuery)
-                val url = "https://www.google.com/search?q=$encodedQuery"
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                startActivity(intent)
+                goToBrowserMore(data)
             }
         })
         binding.rvMore.adapter = moreResultAdapter
@@ -92,7 +92,27 @@ class ResultActivity : AppCompatActivity() {
         moreResultAdapter.submitData(moreResultDataList)
     }
 
-    private fun goBackToSearchActivity(){
-        startActivity(Intent(this, SearchActivity::class.java))
+    private fun goToBrowserRecommend(data: RecommendResultModel){
+        val searchQuery = data.songTitle
+        val encodedQuery = Uri.encode(searchQuery)
+        val url = "https://www.google.com/search?q=$encodedQuery"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
+    }
+
+    private fun goToBrowserRecently(data: RecentlyResultModel){
+        val searchQuery = data.songTitle
+        val encodedQuery = Uri.encode(searchQuery)
+        val url = "https://www.google.com/search?q=$encodedQuery"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
+    }
+
+    private fun goToBrowserMore(data: MoreResultModel){
+        val searchQuery = data.songTitle
+        val encodedQuery = Uri.encode(searchQuery)
+        val url = "https://www.google.com/search?q=$encodedQuery"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
     }
 }
