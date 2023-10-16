@@ -1,4 +1,4 @@
-# Challenge Chapter 2 - Synrgy🔥
+# Challenge Chapter 3 - Synrgy🔥
 
 📌Note: 
 - Challenge menggunakan Activity Only terdapat pada branch -> `feature1/with-activity-only`
